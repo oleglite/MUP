@@ -1,0 +1,11 @@
+text(topic)=[topic]+{font-size: 21px; color: red; font-weight: bold; }
+text(intro)=[intro]+{font-size: 16px; color: gray;}
+text(source)=[source]+{font-size: 16px;}
+text(length)=[length]+{font-size: 16px;}
+text(square)=[square]+{font-size: 16px;}
+text(position)=[position]+{font-size: 16px;}
+
+block(topicBlock)=[topic]+{margin: 20px; width: 300px; text-align: center; position: relative; left: 200px; font-family: Geneva, Arial, Helvetica, sans-serif;}
+block(bodyBlock)=[intro, source, length, square, position]+{group: vertical;}
+
+block(main)=[topicBlock, bodyBlock]+{group: vertical; padding: 20px; border: 1px blue solid; background: #f0f0f0; margin: 40px;}

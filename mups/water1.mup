@@ -1,0 +1,7 @@
+text(topic)=[topic]+{font-size: 21px; color: blue; font-weight: bold;}
+text(namesLabel)=[namesLabel]+{border-bottom: 2px solid black;}
+text(names)=[names_1, names_2, names_3]+{group: bulleted list;}
+text(linkWater)=[water.mup, pageWater]+{group: link; font-size: 13px;}
+block(beginner)=[topic, namesLabel, names, linkWater]+{group: vertical;}
+media(waterPicture)=[D:/Development/Qt/mup/water.jpg]+{margin-left: 10px;}
+block(main)=[beginner, waterPicture]+{group: horizontal; padding: 20px; border: 1px blue solid; background: #f0f0f0; margin: 40px;}

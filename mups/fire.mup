@@ -1,0 +1,18 @@
+text(topic)=[topic]+{font-size: 21px; color: red; font-weight: bold; }
+text(definition)=[topic, intro]+{font-size: 16px; color: gray;}
+text(colorsLabel)=[colorsLabel]+{border-bottom: 2px solid black;}
+text(colorsExplanation)=[colorsExplanation]+{font-style: italic;}
+text(colors)=[colors1, colors2, colors3, colors4, colors5, colors6, colors7]+{group: numeric list;}
+
+text(linkDescription)=[linkDescription]+{font-size: 14px; color: #e19010;}
+text(linkFire)=[fire.mup, pageFire]+{group: link; font-size: 13px; color: red; font-weight: bold;}
+text(linkAir)=[air.mup, pageAir]+{group: link; font-size: 13px; color: red;}
+text(linkWater)=[water.mup, pageWater]+{group: link; font-size: 13px; color: red;}
+
+media(firePicture)=[D:/Development/Qt/mup/fire.jpg]+{margin-left: 240px; margin-bottom: 10px;}
+
+block(topicBlock)=[topic]+{margin: 20px; width: 300px; text-align: center; position: relative; left: 200px; font-family: Geneva, Arial, Helvetica, sans-serif;}
+block(links)=[linkFire, linkAir, linkWater]+{group: horizontal;}
+block(navigation)=[linkDescription, links]+{group: horizontal; margin-top: 30px; padding-left: 50px; border: 2px white solid;}
+block(bodyBlock)=[definition, colorsLabel, colorsExplanation, colors]+{group: vertical;}
+block(main)=[topicBlock, firePicture, bodyBlock, navigation]+{group: vertical; padding: 20px; border: 1px red solid; background: #f0f0f0; margin: 40px;}
